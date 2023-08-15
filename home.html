@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies By Stravo</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f8be2f3f79.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <i class="fa-solid fa-fire-burner"></i>
+            <div class="search-container">
+                <input  type="text" name="search-bar" id="search-bar">
+                <button onclick="getSearch()">search</button>
+            </div>
+            <i class="fa-solid fa-user" name="user"><a> Login</a></i>
+        </nav>
+    </header>
+    
+    <div class="main-aside">
+        <aside>
+            <p onclick="window.location.href = ''">Home</p>
+            <p>Movies</p>
+            <p onclick="showGenre()">Genre</p>
+            <div class="genre-container">
+
+            </div>
+        </aside>
+        
+        <main>
+
+                <h1 class="heading">Popular Movies</h1>
+                <div class="movies-container movies-popular">
+                </div>
+        </main>
+    </div> 
+    <div class="pagination">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span class="active" onclick="pagination(event)" id="index_1" tabindex="0">1</span>
+        <span onclick="pagination(event)" id="index_2" tabindex="0">2</span>
+        <span onclick="pagination(event)" id="index_3" tabindex="0">3</span>
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
