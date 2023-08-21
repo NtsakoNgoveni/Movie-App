@@ -235,7 +235,7 @@ function moviePageFunction(item)
 
     nav.innerHTML=`
     <div class="nav">
-        <img onclick="window.location.href = './home.html'" src="home.png" class="homebtn"></img>
+        <img onclick="window.location.href = './index.html'" src="home.png" class="homebtn"></img>
         <h1 class="heading_mov">${title}</h1>
         <div class="part_genre_cont">${genres.map(item =>{
             const genre = document.createElement('div');
